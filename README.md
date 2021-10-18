@@ -7,8 +7,11 @@ Semestre 2021.2
 #
 
 Universidade Federal do Rio Grande do Norte 
+
 Centro de Ensino Superior do Seridó 
+
 Departamento de Computação e Tecnologia 
+
 Bacharelado em Sistemas de Informação
 
 Developed by @flgorgonio - Jun, 2021
