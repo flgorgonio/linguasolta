@@ -11,7 +11,7 @@ Centro de Ensino Superior do Seridó \
 Departamento de Computação e Tecnologia \
 Bacharelado em Sistemas de Informação
 
-Developed by @flgorgonio - Jun, 2021
+Developed by @flgorgonio - Out, 2021
 
 ## Escola de Idiomas Língua Solta
 
