@@ -16,6 +16,7 @@ void telaSobre(void);
 void telaPrincipal(void);
 void telaEquipe(void);
 void telaMenuAluno(void);
+void telaCadastrarAluno(void);
 
 /////
 // Programa principal
@@ -24,6 +25,7 @@ int main(void) {
     telaPrincipal();
     telaEquipe();
     telaMenuAluno();
+    telaCadastrarAluno();
     return 0;
 }
 
@@ -155,3 +157,37 @@ void telaMenuAluno(void) {
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
 }
+
+
+
+void telaCadastrarAluno(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                Developed by  @flgorgonio - Jan, 2021                  ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///           = = = = = = = = Cadastrar Aluno = = = = = = = =             ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           Matrícula (apenas números):                                 ///\n");
+    printf("///           Nome completo:                                              ///\n");
+    printf("///           E-mail:                                                     ///\n");
+    printf("///           Data de Nascimento (dd/mm/aaaa):                            ///\n");
+    printf("///           Celular  (apenas números):                                  ///\n");
+    printf("///                                                                       ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
