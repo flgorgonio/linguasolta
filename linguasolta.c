@@ -8,12 +8,14 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #include <stdio.h>
+#include <stdlib.h>
 
 /////
 // Assinatura das funções
 void telaSobre(void);
 void telaPrincipal(void);
 void telaEquipe(void);
+void telaMenuAluno(void);
 
 /////
 // Programa principal
@@ -21,6 +23,7 @@ int main(void) {
     telaSobre();
     telaPrincipal();
     telaEquipe();
+    telaMenuAluno();
     return 0;
 }
 
@@ -28,6 +31,7 @@ int main(void) {
 // Funções
 
 void telaSobre(void) {
+    system("clear||cls");
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
@@ -50,11 +54,14 @@ void telaSobre(void) {
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
 }
 
 
 
 void telaPrincipal(void) {
+    system("clear||cls");
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
@@ -74,15 +81,19 @@ void telaPrincipal(void) {
     printf("///            3. Módulo Turma                                              ///\n");
     printf("///            4. Módulo Matrícula                                          ///\n");
     printf("///            5. Módulo Relatórios                                         ///\n");
+    printf("///            6. Módulo Sobre                                              ///\n");
     printf("///            0. Sair                                                      ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
 }
 
 
 
 void telaEquipe(void) {
+    system("clear||cls");
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
@@ -106,4 +117,41 @@ void telaEquipe(void) {
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaMenuAluno(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                Developed by  @flgorgonio - Jan, 2021                  ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///           = = = = = = = = =  Menu Aluno = = = = = = = = =             ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           1. Cadastrar um novo aluno                                  ///\n");
+    printf("///           2. Pesquisar os dados de um aluno                           ///\n");
+    printf("///           3. Atualizar o cadastro de um aluno                         ///\n");
+    printf("///           4. Excluir um aluno do sistema                              ///\n");
+    printf("///           0. Voltar ao menu anterior                                  ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           Escolha a opção desejada:                                   ///\n");
+    printf("///                                                                       ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
 }
