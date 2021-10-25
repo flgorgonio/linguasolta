@@ -10,24 +10,34 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
 /////
 // Assinatura das funções
+
 void telaSobre(void);
 void telaPrincipal(void);
 void telaEquipe(void);
 void telaMenuAluno(void);
 void telaCadastrarAluno(void);
+void telaPesquisarAluno(void);
+
+
 
 /////
 // Programa principal
+
 int main(void) {
     telaSobre();
     telaPrincipal();
     telaEquipe();
     telaMenuAluno();
     telaCadastrarAluno();
+    telaPesquisarAluno();
     return 0;
 }
+
+
 
 /////
 // Funções
@@ -135,7 +145,7 @@ void telaMenuAluno(void) {
     printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
     printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
     printf("///          ===================================================          ///\n");
-    printf("///                Developed by  @flgorgonio - Jan, 2021                  ///\n");
+    printf("///                Developed by  @flgorgonio - Out, 2021                  ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                       ///\n");
@@ -170,7 +180,7 @@ void telaCadastrarAluno(void) {
     printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
     printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
     printf("///          ===================================================          ///\n");
-    printf("///                Developed by  @flgorgonio - Jan, 2021                  ///\n");
+    printf("///                Developed by  @flgorgonio - Out, 2021                  ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                       ///\n");
@@ -191,3 +201,31 @@ void telaCadastrarAluno(void) {
     getchar();
 }
 
+
+
+void telaPesquisarAluno(void) {
+    system("clear||cls");
+	printf("\n");
+	printf("/////////////////////////////////////////////////////////////////////////////\n");
+	printf("///                                                                       ///\n");
+	printf("///          ===================================================          ///\n");
+	printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+	printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
+	printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+	printf("///          ===================================================          ///\n");
+	printf("///                Developed by  @flgorgonio - Out, 2021                  ///\n");
+	printf("///                                                                       ///\n");
+	printf("/////////////////////////////////////////////////////////////////////////////\n");
+	printf("///                                                                       ///\n");
+	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+	printf("///           = = = = = = = = Pesquisar Aluno = = = = = = = =             ///\n");
+	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           Informe a matrícula (apenas números):                       ///\n");
+	printf("///                                                                       ///\n");
+	printf("///                                                                       ///\n");
+	printf("/////////////////////////////////////////////////////////////////////////////\n");
+	printf("\n");
+	printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+	getchar();
+}
