@@ -4,7 +4,7 @@
 ///               Departamento de Computação e Tecnologia                   ///
 ///                  Disciplina DCT1106 -- Programação                      ///
 ///                  Projeto Sistema de Gestão Escolar                      ///
-///                Developed by  @flgorgonio - Out, 2021                    ///
+///                Developed by  @flgorgonio - 2021.2                       ///
 ///////////////////////////////////////////////////////////////////////////////
 
 #include <stdio.h>
@@ -251,7 +251,7 @@ void telaAlterarAluno(void) {
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                       ///\n");
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
-    printf("///           = = = = = = = = Alterar Aluno = = = = = = = =               ///\n");
+    printf("///           = = = = = = = = Alterar Aluno = = = = = = = = =             ///\n");
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
     printf("///           Informe a matrícula (apenas números):                       ///\n");
@@ -280,7 +280,7 @@ void telaExcluirAluno(void) {
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                       ///\n");
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
-    printf("///           = = = = = = = = Excluir Aluno = = = = = = = =               ///\n");
+    printf("///           = = = = = = = = Excluir Aluno = = = = = = = = =             ///\n");
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
     printf("///           Informe a matrícula (apenas números):                       ///\n");
@@ -291,3 +291,5 @@ void telaExcluirAluno(void) {
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
 }
+
+
