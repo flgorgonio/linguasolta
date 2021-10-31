@@ -86,7 +86,7 @@ void telaPrincipal(void) {
     printf("///               Departamento de Computação e Tecnologia                   ///\n");
     printf("///                  Disciplina DCT1106 -- Programação                      ///\n");
     printf("///                  Projeto Sistema de Gestão Escolar                      ///\n");
-    printf("///                Developed by  @flgorgonio - Out, 2021                    ///\n");
+    printf("///                Developed by  @flgorgonio - 2021.2                       ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
@@ -118,7 +118,7 @@ void telaEquipe(void) {
     printf("///               Departamento de Computação e Tecnologia                   ///\n");
     printf("///                  Disciplina DCT1106 -- Programação                      ///\n");
     printf("///                  Projeto Sistema de Gestão Escolar                      ///\n");
-    printf("///                Developed by  @flgorgonio - Out, 2021                    ///\n");
+    printf("///                Developed by  @flgorgonio - 2021.2                       ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
@@ -149,7 +149,7 @@ void telaMenuAluno(void) {
     printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
     printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
     printf("///          ===================================================          ///\n");
-    printf("///                Developed by  @flgorgonio - Out, 2021                  ///\n");
+    printf("///                Developed by  @flgorgonio - 2021.2                     ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                       ///\n");
@@ -184,7 +184,7 @@ void telaCadastrarAluno(void) {
     printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
     printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
     printf("///          ===================================================          ///\n");
-    printf("///                Developed by  @flgorgonio - Out, 2021                  ///\n");
+    printf("///                Developed by  @flgorgonio - 2021.2                     ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                       ///\n");
@@ -217,7 +217,7 @@ void telaPesquisarAluno(void) {
     printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
     printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
     printf("///          ===================================================          ///\n");
-    printf("///                Developed by  @flgorgonio - Out, 2021                  ///\n");
+    printf("///                Developed by  @flgorgonio - 2021.2                     ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                       ///\n");
@@ -246,7 +246,7 @@ void telaAlterarAluno(void) {
     printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
     printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
     printf("///          ===================================================          ///\n");
-    printf("///                Developed by  @flgorgonio - Jan, 2021                  ///\n");
+    printf("///                Developed by  @flgorgonio - 2021.2                     ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                       ///\n");
@@ -275,7 +275,7 @@ void telaExcluirAluno(void) {
     printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
     printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
     printf("///          ===================================================          ///\n");
-    printf("///                Developed by  @flgorgonio - Jan, 2021                  ///\n");
+    printf("///                Developed by  @flgorgonio - 2021.2                     ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                       ///\n");
