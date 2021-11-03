@@ -140,6 +140,8 @@ void telaEquipe(void) {
 
 
 void telaMenuAluno(void) {
+    char op;
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -163,7 +165,9 @@ void telaMenuAluno(void) {
     printf("///           4. Excluir um aluno do sistema                              ///\n");
     printf("///           0. Voltar ao menu anterior                                  ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Escolha a opção desejada:                                   ///\n");
+    printf("///           Escolha a opção desejada: ");
+    scanf("%c", &op);
+    getchar();
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
