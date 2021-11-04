@@ -235,6 +235,8 @@ void telaCadastrarAluno(void) {
 
 
 void telaPesquisarAluno(void) {
+    char matr[12];
+    
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -253,6 +255,8 @@ void telaPesquisarAluno(void) {
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
     printf("///           Informe a matrícula (apenas números):                       ///\n");
+    scanf("%[0-9]", matr);
+    getchar();
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
