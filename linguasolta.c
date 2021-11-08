@@ -31,8 +31,8 @@ void telaExcluirAluno(void);
 
 int main(void) {
     telaSobre();
-    telaPrincipal();
     telaEquipe();
+    telaPrincipal();
     telaMenuAluno();
     telaCadastrarAluno();
     telaPesquisarAluno();
