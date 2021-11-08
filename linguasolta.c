@@ -216,7 +216,7 @@ void telaCadastrarAluno(void) {
     scanf("%[A-ZÁÉÍÓÚÂÊÔÇÀÃÕ a-záéíóúâêôçàãõ]", nome);
     getchar();
     printf("///           E-mail: ");
-    scanf("%[A-Za-z@._]", email);
+    scanf("%[A-Za-z0-9@._]", email);
     getchar();
     printf("///           Data de Nascimento (dd/mm/aaaa):  ");
     scanf("%[0-9/]", nasc);
@@ -254,7 +254,7 @@ void telaPesquisarAluno(void) {
     printf("///           = = = = = = = = Pesquisar Aluno = = = = = = = =             ///\n");
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Informe a matrícula (apenas números):                       ///\n");
+    printf("///           Informe a matrícula (apenas números): ");
     scanf("%[0-9]", matr);
     getchar();
     printf("///                                                                       ///\n");
@@ -287,7 +287,7 @@ void telaAlterarAluno(void) {
     printf("///           = = = = = = = = Alterar Aluno = = = = = = = = =             ///\n");
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Informe a matrícula (apenas números):                       ///\n");
+    printf("///           Informe a matrícula (apenas números): ");
     scanf("%[0-9]", matr);
     getchar();
     printf("///                                                                       ///\n");
@@ -320,7 +320,7 @@ void telaExcluirAluno(void) {
     printf("///           = = = = = = = = Excluir Aluno = = = = = = = = =             ///\n");
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Informe a matrícula (apenas números):                       ///\n");
+    printf("///           Informe a matrícula (apenas números): ");
     scanf("%[0-9]", matr);
     getchar();
     printf("///                                                                       ///\n");
