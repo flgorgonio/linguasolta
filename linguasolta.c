@@ -24,6 +24,7 @@ void telaCadastrarAluno(void);
 void telaPesquisarAluno(void);
 void telaAlterarAluno(void);
 void telaExcluirAluno(void);
+void telaMenuProfessor(void);
 
 
 
@@ -381,3 +382,5 @@ void telaMenuProfessor(void) {
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
 }
+
+
