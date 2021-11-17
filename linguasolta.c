@@ -32,6 +32,8 @@ void telaPesquisarProfessor(void);
 void telaAlterarProfessor(void);
 void telaExcluirProfessor(void);
 
+void telaMenuTurma(void);
+
 
 
 //////
@@ -42,16 +44,20 @@ int main(void) {
     telaSobre();
     telaEquipe();
     telaPrincipal();
+
     telaMenuAluno();
     telaCadastrarAluno();
     telaPesquisarAluno();
     telaAlterarAluno();
     telaExcluirAluno();
+
     telaMenuProfessor();
     telaCadastrarProfessor();
     telaPesquisarProfessor();
     telaAlterarProfessor();
     telaExcluirProfessor();
+
+    telaMenuTurma();
     return 0;
 }
 
@@ -539,3 +545,47 @@ void telaExcluirProfessor(void) {
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
 }
+
+
+
+//////
+////// Funções do Módulo Turma
+//////
+
+void telaMenuTurma(void) {
+    char op;
+
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                   Developed by @flgorgonio - 2021.2                   ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///           = = = = = = = = =  Menu Turma = = = = = = = = =             ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           1. Cadastrar uma nova turma                                 ///\n");
+    printf("///           2. Pesquisar os dados de uma turma                          ///\n");
+    printf("///           3. Atualizar o cadastro de uma turma                        ///\n");
+    printf("///           4. Excluir uma turma do sistema                             ///\n");
+    printf("///           0. Voltar ao menu anterior                                  ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           Escolha a opção desejada: ");
+    scanf("%c", &op);
+    getchar();
+    printf("///                                                                       ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
