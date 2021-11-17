@@ -13,18 +13,21 @@
 
 
 //////
-////// Assinatura das funções
+////// Assinaturas das funções
 //////
 
 void telaSobre(void);
 void telaPrincipal(void);
 void telaEquipe(void);
+
 void telaMenuAluno(void);
 void telaCadastrarAluno(void);
 void telaPesquisarAluno(void);
 void telaAlterarAluno(void);
 void telaExcluirAluno(void);
+
 void telaMenuProfessor(void);
+void telaCadastrarProfessor(void);
 
 
 
@@ -42,6 +45,7 @@ int main(void) {
     telaAlterarAluno();
     telaExcluirAluno();
     telaMenuProfessor();
+    telaCadastrarProfessor();
     return 0;
 }
 
@@ -374,6 +378,55 @@ void telaMenuProfessor(void) {
     printf("///                                                                       ///\n");
     printf("///           Escolha a opção desejada: ");
     scanf("%c", &op);
+    getchar();
+    printf("///                                                                       ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaCadastrarProfessor(void) {
+    char cpf[12]; 
+    char nome[51];
+    char email[51];
+    char nasc[11];
+    char celular[12];
+
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                   Developed by @flgorgonio - 2021.2                   ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///           = = = = = = = Cadastrar Professor = = = = = = =             ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           CPF (apenas números): ");
+    scanf("%[0-9]", cpf);
+    getchar();
+    printf("///           Nome completo: ");
+    scanf("%[A-ZÁÉÍÓÚÂÊÔÇÀÃÕ a-záéíóúâêôçàãõ]", nome);
+    getchar();
+    printf("///           E-mail: ");
+    scanf("%[A-Za-z0-9@._]", email);
+    getchar();
+    printf("///           Data de Nascimento (dd/mm/aaaa):  ");
+    scanf("%[0-9/]", nasc);
+    getchar();
+    printf("///           Celular  (apenas números): ");
+    scanf("%[0-9]", celular);
     getchar();
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
