@@ -28,6 +28,7 @@ void telaExcluirAluno(void);
 
 void telaMenuProfessor(void);
 void telaCadastrarProfessor(void);
+void telaPesquisarProfessor(void);
 
 
 
@@ -46,6 +47,7 @@ int main(void) {
     telaExcluirAluno();
     telaMenuProfessor();
     telaCadastrarProfessor();
+    telaPesquisarProfessor();
     return 0;
 }
 
@@ -437,3 +439,33 @@ void telaCadastrarProfessor(void) {
 }
 
 
+void telaPesquisarProfessor(void) {
+    char cpf[12];
+    
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                   Developed by @flgorgonio - 2021.2                   ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///           = = = = = = = Pesquisar Professor = = = = = = =             ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           Informe o CPF (apenas números): ");
+    scanf("%[0-9]", cpf);
+    getchar();
+    printf("///                                                                       ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
