@@ -34,6 +34,7 @@ void telaExcluirProfessor(void);
 
 void telaMenuTurma(void);
 void telaCadastrarTurma(void);
+void telaPesquisarTurma(void);
 
 
 
@@ -60,6 +61,7 @@ int main(void) {
 
     telaMenuTurma();
     telaCadastrarTurma();
+    telaPesquisarTurma();
     return 0;
 }
 
@@ -643,3 +645,37 @@ void telaCadastrarTurma(void) {
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
 }
+
+
+
+void telaPesquisarTurma(void) {
+    char codTurma[4];
+    
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                   Developed by @flgorgonio - 2021.2                   ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///           = = = = = = = = Pesquisar Turma = = = = = = = =             ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           Informe o código da turma (Ex. F01, S02): ");
+    scanf("%[A-Z0-9]", codTurma);
+    getchar();
+    printf("///                                                                       ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
