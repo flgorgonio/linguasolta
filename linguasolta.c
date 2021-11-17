@@ -30,6 +30,7 @@ void telaMenuProfessor(void);
 void telaCadastrarProfessor(void);
 void telaPesquisarProfessor(void);
 void telaAlterarProfessor(void);
+void telaExcluirProfessor(void);
 
 
 
@@ -50,6 +51,7 @@ int main(void) {
     telaCadastrarProfessor();
     telaPesquisarProfessor();
     telaAlterarProfessor();
+    telaExcluirProfessor();
     return 0;
 }
 
@@ -492,6 +494,39 @@ void telaAlterarProfessor(void) {
     printf("///                                                                       ///\n");
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///           = = = = = = = Alterar Professor = = = = = = = =             ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           Informe o CPF (apenas números): ");
+    scanf("%[0-9]", cpf);
+    getchar();
+    printf("///                                                                       ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaExcluirProfessor(void) {
+    char cpf[12];
+    
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                   Developed by @flgorgonio - 2021.2                   ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///           = = = = = = = Excluir Professor = = = = = = = =             ///\n");
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
     printf("///           Informe o CPF (apenas números): ");
