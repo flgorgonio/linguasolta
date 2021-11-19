@@ -35,6 +35,7 @@ void telaExcluirProfessor(void);
 void telaMenuTurma(void);
 void telaCadastrarTurma(void);
 void telaPesquisarTurma(void);
+void telaAlterarTurma(void);
 
 
 
@@ -62,6 +63,7 @@ int main(void) {
     telaMenuTurma();
     telaCadastrarTurma();
     telaPesquisarTurma();
+    telaAlterarTurma();
     return 0;
 }
 
@@ -678,4 +680,38 @@ void telaPesquisarTurma(void) {
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
 }
+
+
+
+void telaAlterarTurma(void) {
+    char codTurma[4];
+    
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = =   Escola de Idiomas Língua Solta    = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                   Developed by @flgorgonio - 2021.2                   ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///           = = = = = = = =  Alterar Turma  = = = = = = = =             ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           Informe o código da turma (Ex. F01, S02): ");
+    scanf("%[A-Z0-9]", codTurma);
+    getchar();
+    printf("///                                                                       ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
 
