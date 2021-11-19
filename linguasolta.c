@@ -45,6 +45,7 @@ void telaExcluirTurma(void);
 //////
 
 int main(void) {
+    
     telaSobre();
     telaEquipe();
     telaPrincipal();
@@ -66,6 +67,7 @@ int main(void) {
     telaPesquisarTurma();
     telaAlterarTurma();
     telaExcluirTurma();
+
     return 0;
 }
 
