@@ -16,8 +16,8 @@
 ////// Assinaturas das funções
 //////
 
+char telaPrincipal(void);
 void telaSobre(void);
-void telaPrincipal(void);
 void telaEquipe(void);
 
 void telaMenuAluno(void);
@@ -45,28 +45,47 @@ void telaExcluirTurma(void);
 //////
 
 int main(void) {
+    char opcao;
+
+    do {
+        opcao = telaPrincipal();
+        switch(opcao) {
+            case '1':   // Módulo Aluno
+                        break;
+            case '2':   // Módulo Professor
+                        break;
+            case '3':   // Módulo Turma
+                        break;
+            case '4':   // Módulo Matrícula
+                        break;
+            case '5':   // Módulo Relatórios
+                        break;
+            case '6':   // Módulo Sobre
+                        break;
+        } 	
+    } while (opcao != '0');
+
     
-    telaSobre();
-    telaEquipe();
-    telaPrincipal();
+    // telaSobre();
+    // telaEquipe();
 
-    telaMenuAluno();
-    telaCadastrarAluno();
-    telaPesquisarAluno();
-    telaAlterarAluno();
-    telaExcluirAluno();
+    // telaMenuAluno();
+    // telaCadastrarAluno();
+    // telaPesquisarAluno();
+    // telaAlterarAluno();
+    // telaExcluirAluno();
 
-    telaMenuProfessor();
-    telaCadastrarProfessor();
-    telaPesquisarProfessor();
-    telaAlterarProfessor();
-    telaExcluirProfessor();
+    // telaMenuProfessor();
+    // telaCadastrarProfessor();
+    // telaPesquisarProfessor();
+    // telaAlterarProfessor();
+    // telaExcluirProfessor();
 
-    telaMenuTurma();
-    telaCadastrarTurma();
-    telaPesquisarTurma();
-    telaAlterarTurma();
-    telaExcluirTurma();
+    // telaMenuTurma();
+    // telaCadastrarTurma();
+    // telaPesquisarTurma();
+    // telaAlterarTurma();
+    // telaExcluirTurma();
 
     return 0;
 }
@@ -107,7 +126,7 @@ void telaSobre(void) {
 
 
 
-void telaPrincipal(void) {
+char telaPrincipal(void) {
     char op;
 
     system("clear||cls");
@@ -142,6 +161,7 @@ void telaPrincipal(void) {
     printf("\n");
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
+    return op;
 }
 
 
