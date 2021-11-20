@@ -61,13 +61,11 @@ int main(void) {
             case '5':   // Módulo Relatórios
                         break;
             case '6':   // Módulo Sobre
+                        telaSobre();
+                        telaEquipe();
                         break;
         } 	
     } while (opcao != '0');
-
-    
-    // telaSobre();
-    // telaEquipe();
 
     // telaMenuAluno();
     // telaCadastrarAluno();
