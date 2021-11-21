@@ -9,6 +9,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 
 
@@ -63,8 +64,7 @@ int main(void) {
                         break;
             case '5':   // Módulo Relatórios
                         break;
-            case '6':   // Módulo Sobre
-                        telaSobre();
+            case '6':   telaSobre();
                         telaEquipe();
                         break;
         } 	
@@ -78,34 +78,6 @@ int main(void) {
 //////
 ////// Funções do Módulo Principal
 //////
-
-void telaSobre(void) {
-    system("clear||cls");
-    printf("\n");
-    printf("///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///                                                                         ///\n");
-    printf("///             Universidade Federal do Rio Grande do Norte                 ///\n");
-    printf("///                 Centro de Ensino Superior do Seridó                     ///\n");
-    printf("///               Departamento de Computação e Tecnologia                   ///\n");
-    printf("///                  Disciplina DCT1106 -- Programação                      ///\n");
-    printf("///                  Projeto Sistema de Gestão Escolar                      ///\n");
-    printf("///                  Developed by @flgorgonio - 2021.2                      ///\n");
-    printf("///                                                                         ///\n");
-    printf("///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///                                                                         ///\n");
-    printf("///            = = = = = Sistema de Gestão Escolar = = = = =                ///\n");
-    printf("///                                                                         ///\n");
-    printf("///  Programa exemplo utilizado na disciplina DCT1106 - Programação, para   ///\n");
-    printf("///  fins didáticos de ilustração. O programa contém os principais módulos  ///\n");
-    printf("///  e funcionalidades que serão exigidos na avaliação dos projetos a serem ///\n");
-    printf("///  desenvolvidos pelos alunos ao longo da disciplina. Serve como um guia  ///\n");
-    printf("///  de consulta e referência para o desenvolvidos dos demais projetos.     ///\n");
-    printf("///                                                                         ///\n");
-    printf("///////////////////////////////////////////////////////////////////////////////\n");
-    printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
-}
 
 
 
@@ -142,9 +114,39 @@ char telaPrincipal(void) {
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
+    return op;
+}
+
+
+
+void telaSobre(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                         ///\n");
+    printf("///             Universidade Federal do Rio Grande do Norte                 ///\n");
+    printf("///                 Centro de Ensino Superior do Seridó                     ///\n");
+    printf("///               Departamento de Computação e Tecnologia                   ///\n");
+    printf("///                  Disciplina DCT1106 -- Programação                      ///\n");
+    printf("///                  Projeto Sistema de Gestão Escolar                      ///\n");
+    printf("///                  Developed by @flgorgonio - 2021.2                      ///\n");
+    printf("///                                                                         ///\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                         ///\n");
+    printf("///            = = = = = Sistema de Gestão Escolar = = = = =                ///\n");
+    printf("///                                                                         ///\n");
+    printf("///  Programa exemplo utilizado na disciplina DCT1106 - Programação, para   ///\n");
+    printf("///  fins didáticos de ilustração. O programa contém os principais módulos  ///\n");
+    printf("///  e funcionalidades que serão exigidos na avaliação dos projetos a serem ///\n");
+    printf("///  desenvolvidos pelos alunos ao longo da disciplina. Serve como um guia  ///\n");
+    printf("///  de consulta e referência para o desenvolvidos dos demais projetos.     ///\n");
+    printf("///                                                                         ///\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
-    return op;
 }
 
 
@@ -236,8 +238,8 @@ char telaMenuAluno(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
     return op;
 }
 
@@ -286,8 +288,8 @@ void telaCadastrarAluno(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
 }
 
 
@@ -319,8 +321,8 @@ void telaPesquisarAluno(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
 }
 
 
@@ -352,8 +354,8 @@ void telaAlterarAluno(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
 }
 
 
@@ -385,8 +387,8 @@ void telaExcluirAluno(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
 }
 
 
@@ -447,8 +449,8 @@ char telaMenuProfessor(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
     return op;
 }
 
@@ -497,8 +499,8 @@ void telaCadastrarProfessor(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
 }
 
 
@@ -529,8 +531,8 @@ void telaPesquisarProfessor(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
 }
 
 
@@ -562,8 +564,8 @@ void telaAlterarProfessor(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
 }
 
 
@@ -595,8 +597,8 @@ void telaExcluirProfessor(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
 }
 
 
@@ -657,8 +659,8 @@ char telaMenuTurma(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
     return op;
 }
 
@@ -711,8 +713,8 @@ void telaCadastrarTurma(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
 }
 
 
@@ -744,8 +746,8 @@ void telaPesquisarTurma(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
 }
 
 
@@ -777,8 +779,8 @@ void telaAlterarTurma(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
 }
 
 
@@ -810,8 +812,6 @@ void telaExcluirTurma(void) {
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
-    getchar();
+    printf("\t\t\t<<< ... Aguarde ... >>>\n");
+    sleep(1);
 }
-
-
