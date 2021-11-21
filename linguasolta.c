@@ -20,7 +20,8 @@ char telaPrincipal(void);
 void telaSobre(void);
 void telaEquipe(void);
 
-void telaMenuAluno(void);
+void moduloAluno(void);
+char telaMenuAluno(void);
 void telaCadastrarAluno(void);
 void telaPesquisarAluno(void);
 void telaAlterarAluno(void);
@@ -50,7 +51,7 @@ int main(void) {
     do {
         opcao = telaPrincipal();
         switch(opcao) {
-            case '1':   // Módulo Aluno
+            case '1':   moduloAluno();
                         break;
             case '2':   // Módulo Professor
                         break;
@@ -66,12 +67,6 @@ int main(void) {
                         break;
         } 	
     } while (opcao != '0');
-
-    // telaMenuAluno();
-    // telaCadastrarAluno();
-    // telaPesquisarAluno();
-    // telaAlterarAluno();
-    // telaExcluirAluno();
 
     // telaMenuProfessor();
     // telaCadastrarProfessor();
@@ -199,7 +194,26 @@ void telaEquipe(void) {
 ////// Funções do Módulo Aluno
 //////
 
-void telaMenuAluno(void) {
+void moduloAluno(void) {
+    char opcao;
+    do {
+        opcao = telaMenuAluno();
+        switch(opcao) {
+            case '1': 	telaCadastrarAluno();
+                        break;
+            case '2': 	telaPesquisarAluno();
+                        break;
+            case '3': 	telaAlterarAluno();
+                        break;
+            case '4': 	telaExcluirAluno();
+                        break;
+        } 		
+    } while (opcao != '0');
+}
+
+
+
+char telaMenuAluno(void) {
     char op;
 
     system("clear||cls");
@@ -234,6 +248,7 @@ void telaMenuAluno(void) {
     printf("\n");
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
+    return op;
 }
 
 
