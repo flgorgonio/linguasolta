@@ -34,7 +34,8 @@ void telaPesquisarProfessor(void);
 void telaAlterarProfessor(void);
 void telaExcluirProfessor(void);
 
-void telaMenuTurma(void);
+void moduloTurma(void);
+char telaMenuTurma(void);
 void telaCadastrarTurma(void);
 void telaPesquisarTurma(void);
 void telaAlterarTurma(void);
@@ -56,7 +57,7 @@ int main(void) {
                         break;
             case '2':   moduloProfessor();
                         break;
-            case '3':   // Módulo Turma
+            case '3':   moduloTurma();
                         break;
             case '4':   // Módulo Matrícula
                         break;
@@ -68,18 +69,6 @@ int main(void) {
                         break;
         } 	
     } while (opcao != '0');
-
-    // telaMenuProfessor();
-    // telaCadastrarProfessor();
-    // telaPesquisarProfessor();
-    // telaAlterarProfessor();
-    // telaExcluirProfessor();
-
-    // telaMenuTurma();
-    // telaCadastrarTurma();
-    // telaPesquisarTurma();
-    // telaAlterarTurma();
-    // telaExcluirTurma();
 
     return 0;
 }
@@ -616,7 +605,26 @@ void telaExcluirProfessor(void) {
 ////// Funções do Módulo Turma
 //////
 
-void telaMenuTurma(void) {
+void moduloTurma(void) {
+    char opcao;
+    do {
+        opcao = telaMenuTurma();
+        switch(opcao) {
+            case '1': 	telaCadastrarTurma();
+                        break;
+            case '2': 	telaPesquisarTurma();
+                        break;
+            case '3': 	telaAlterarTurma();
+                        break;
+            case '4': 	telaExcluirTurma();
+                        break;
+        } 		
+    } while (opcao != '0');
+}
+
+
+
+char telaMenuTurma(void) {
     char op;
 
     system("clear||cls");
@@ -651,6 +659,7 @@ void telaMenuTurma(void) {
     printf("\n");
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
+    return op;
 }
 
 
