@@ -27,7 +27,8 @@ void telaPesquisarAluno(void);
 void telaAlterarAluno(void);
 void telaExcluirAluno(void);
 
-void telaMenuProfessor(void);
+void moduloProfessor(void);
+char telaMenuProfessor(void);
 void telaCadastrarProfessor(void);
 void telaPesquisarProfessor(void);
 void telaAlterarProfessor(void);
@@ -53,7 +54,7 @@ int main(void) {
         switch(opcao) {
             case '1':   moduloAluno();
                         break;
-            case '2':   // Módulo Professor
+            case '2':   moduloProfessor();
                         break;
             case '3':   // Módulo Turma
                         break;
@@ -405,7 +406,26 @@ void telaExcluirAluno(void) {
 ////// Funções do Módulo Professor
 //////
 
-void telaMenuProfessor(void) {
+void moduloProfessor(void) {
+    char opcao;
+    do {
+        opcao = telaMenuProfessor();
+        switch(opcao) {
+            case '1': 	telaCadastrarProfessor();
+                        break;
+            case '2': 	telaPesquisarProfessor();
+                        break;
+            case '3': 	telaAlterarProfessor();
+                        break;
+            case '4': 	telaExcluirProfessor();
+                        break;
+        } 		
+    } while (opcao != '0');
+}
+
+
+
+char telaMenuProfessor(void) {
     char op;
     
     system("clear||cls");
@@ -440,6 +460,7 @@ void telaMenuProfessor(void) {
     printf("\n");
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
+    return op;
 }
 
 
