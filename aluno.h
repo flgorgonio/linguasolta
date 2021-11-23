@@ -13,10 +13,6 @@
 ////// Assinaturas das funções Módulo Aluno
 //////
 
-char telaPrincipal(void);
-void telaSobre(void);
-void telaEquipe(void);
-
 void moduloAluno(void);
 char telaMenuAluno(void);
 void telaCadastrarAluno(void);
