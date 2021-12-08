@@ -15,3 +15,4 @@
 
 void delay(int);
 void limpaTela(void);
+int ehDigito(char);

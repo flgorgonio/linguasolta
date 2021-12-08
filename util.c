@@ -18,6 +18,7 @@
 //////
 
 
+
 ///
 /// Faz uma pausa por n segundos, com n sendo passado como parâmetro
 ///
@@ -30,6 +31,7 @@ void delay(int segundos) {
 }
 
 
+
 ///
 /// Limpa a tela; funciona em Linux / MacOS / Windows
 ///
@@ -38,3 +40,19 @@ void limpaTela(void) {
         // limpa a tela, Linux, Mac e Windows
     }
 }
+
+
+
+///
+/// Retorna 1 se o caractere recebido for um dígito (entre 0 e 9)
+/// retorna 0 caso contrário
+///
+int ehDigito(char c) {
+    if (c >= '0' && c <= '9') {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+
