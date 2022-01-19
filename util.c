@@ -83,14 +83,26 @@ int validaFone(char* fone) {
 /// (letra entre 'A' e 'Z' ou entre 'a' e 'z') ou retorna 0 caso contrário
 ///
 int ehLetra(char c) {
-  if (c >= 'A' && c <= 'Z') {
-    return 1;
-  } else if (c >= 'a' && c <= 'z') {
-    return 1;
-  } else {
-    return 0;
-  }
+    if (c >= 'A' && c <= 'Z') {
+        return 1;
+    } else if (c >= 'a' && c <= 'z') {
+        return 1;
+    } else {
+        return 0;
+    }
 }
 
 
 
+///
+/// Retorna 1 se string recebido for exclusivamente alfabético ou
+/// retorna 0 caso contrário
+///
+int validarNome(char* nome) {
+    for (int i=0; nome[i]!='\0'; i++) {
+        if (!ehLetra(nome[i])) {
+            return 0;
+        }
+    }
+    return 1;
+}
