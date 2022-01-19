@@ -75,3 +75,22 @@ int validaFone(char* fone) {
     }
     return 1;
 }
+
+
+
+///
+/// Retorna 1 se o caractere recebido for um caractere alfabético 
+/// (letra entre 'A' e 'Z' ou entre 'a' e 'z') ou retorna 0 caso contrário
+///
+int ehLetra(char c) {
+  if (c >= 'A' && c <= 'Z') {
+    return 1;
+  } else if (c >= 'a' && c <= 'z') {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+
+
