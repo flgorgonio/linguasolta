@@ -2,7 +2,6 @@
 Projeto de Sistema de Gestão Escolar 
 
 Projeto exemplo para a Disciplina DCT1106 - Programação
-Semestre 2021.2
 
 #
 
@@ -11,7 +10,7 @@ Centro de Ensino Superior do Seridó \
 Departamento de Computação e Tecnologia \
 Bacharelado em Sistemas de Informação
 
-Developed by @flgorgonio - Out, 2021
+Developed by @flgorgonio - since Out, 2021
 
 ## Escola de Idiomas Língua Solta
 
